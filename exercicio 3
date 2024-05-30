@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+int numero[10];
+int contagem_pares = 0;
+
+    printf("Digite 10 numeros inteiros");
+    for (int i = 0; i < 10; i++) 
+
+    printf ("numero %d", i+1);
+    scanf("%d", &numero[i]);
+    
+    }
+
+    for (int i = 0; i < 10; i++) {
+        if (numero[i] % 2 == 0) {
+            contagem_pares++;
+        }
+    }
+
+    printf("a quantidade de numeros são", contagem_pares);
+
+    return 0;
+}
