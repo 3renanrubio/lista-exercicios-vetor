@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+float vetor[20] = {16.5, 8.9, 7.1, 9.9, 6.5, 7.7, 8.8, 10.1, 9.1, 12.8, 13.1, 19.8, 14.4, 13.3, 17.5, 2.3, 7.6, 6.6, 12.2, 3};
+
+float soma = 0.0;
+float media;
+int i;
+
+    for (i = 0; i < 20; i++) {
+        soma += vetor[i];
+    }
+
+    media = soma / 20;
+
+    printf("A média no vetor é: %.2f\n", media);
+
+    return 0;
+}
