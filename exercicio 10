@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+int tamanho, i, soma = 0;
+
+    printf("Digite o tamanho: ");
+    scanf("%d", &tamanho);
+
+    int vetor[tamanho];
+    printf("Digite os elementos:\n");
+    for (i = 0; i < tamanho; i++) {
+        printf("Elemento %d: ", i + 1);
+        scanf("%d", &vetor[i]);
+    }
+
+    for (i = 0; i < tamanho; i++) {
+        soma += vetor[i];
+    }
+
+    printf("A soma é: %d\n", soma);
+
+    return 0;
+}
