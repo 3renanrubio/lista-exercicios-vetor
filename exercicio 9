@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+int vetor[15] = {10, 12, 22, 30, 90, 88, 77, 66, 52, 35, 2, 19, 3, 20, 63};
+
+    int n = 15;
+    int i, j, temp;
+
+    for (i = 0; i < n-1; i++) {
+        for (j = 0; j < n-i-1; j++) {
+            if (vetor[j] > vetor[j+1]) {
+            
+                temp = vetor[j];
+                vetor[j] = vetor[j+1];
+                vetor[j+1] = temp;
+            }
+        }
+    }
+
+    printf("Vetor em ordem:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
